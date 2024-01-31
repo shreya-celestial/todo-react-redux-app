@@ -1,13 +1,50 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 40px auto;
+  text-align: center;
+  width: 70%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form input {
+  width: 93%;
+  height: 20px;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+.todolist {
+  margin: 30px auto;
+  display: block;
+}
+
+.todolist h2 {
+  text-decoration: underline;
+}
+
+.todolist ol {
+  height: 66vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(232, 231, 231);
+    border-radius: 8px;
+}
+
+.todolist div {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.todolist div button {
+  margin-left: auto;
+  margin-right: 30px;
 }
